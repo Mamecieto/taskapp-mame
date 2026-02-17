@@ -172,6 +172,176 @@ button:hover {
     font-weight: 600;
 }
 
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    background-color: #66c7c9;       /* fondo celeste */
+    min-height: 100vh;                /* permite crecer si el contenido es mayor que la pantalla */
+    display: flex;
+    justify-content: center;          /* centra horizontalmente */
+    align-items: flex-start;          /* evita que se corte el borde superior */
+    padding-top: 40px;                /* margen celeste arriba */
+    padding-bottom: 40px;             /* margen celeste abajo */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= PANEL ================= */
+.panel {
+    width: 1000px;                    /* ancho fijo tipo A4 */
+    min-height: 1414px;               /* altura tipo hoja A4 */
+    background-color: #dcdcdc;        /* color gris del panel */
+    border: 6px solid black;          /* borde del panel */
+    padding: 60px;                     /* espacio interno */
+    box-sizing: border-box;           /* asegura que padding no aumente tamaño total */
+    margin: 0 auto;                   /* centrado horizontal */
+}
+
+.panel-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+}
+
+.cerrar-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cerrar-btn:hover {
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE SOLO CELULAR ================= */
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .panel {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .panel-superior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE SOLO CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+    }
+
+    .pantalla-bienvenida {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .lado-izquierdo h1 {
+        font-size: 50px;
+    }
+
+    .lado-izquierdo p {
+        font-size: 18px;
+    }
+
+    .cuadro-botones {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .contenedor-principal {
+        height: auto;
+        padding: 20px;
+    }
+
+    .cuadro-formulario {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .grupo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grupo label {
+        width: auto;
+    }
+
+    .panel {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .panel-superior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

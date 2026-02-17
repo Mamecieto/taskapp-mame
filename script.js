@@ -41,7 +41,6 @@ window.location.href = "login.html";
 }
 
 
-// INICIAR SESION
 function iniciarSesion(){
 
 const email = document.getElementById("loginEmail").value;
@@ -56,10 +55,28 @@ return;
 
 if(email === usuarioGuardado.email && password === usuarioGuardado.password){
 alert("Inicio de sesion correcto");
-window.location.href = "index.html";
+window.location.href = "panel.html";   // ← ACÁ ESTÁ LA CLAVE
 }else{
 alert("Email o contraseña incorrectos");
 }
 
 }
+
+
+function cerrarSesion(){
+    window.location.href = "index.html";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
