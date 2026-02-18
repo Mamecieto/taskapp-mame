@@ -195,14 +195,16 @@ body {
 
 /* ================= PANEL ================= */
 .panel {
-    width: 1000px;                    /* ancho fijo tipo A4 */
-    min-height: 1414px;               /* altura tipo hoja A4 */
-    background-color: #dcdcdc;        /* color gris del panel */
-    border: 6px solid black;          /* borde del panel */
-    padding: 60px;                     /* espacio interno */
-    box-sizing: border-box;           /* asegura que padding no aumente tamaño total */
-    margin: 0 auto;                   /* centrado horizontal */
+    width: 90%;
+    max-width: 1000px;
+    min-height: auto;
+    background-color: #dcdcdc;
+    border: 6px solid black;
+    padding: 60px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
+
 
 .panel-superior {
     display: flex;
