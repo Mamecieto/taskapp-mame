@@ -163,14 +163,15 @@ button:hover {
 }
 
 .login-link {
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
-    font-size: 22px;
+    display: block;
+    margin-top: 15px;
+    text-align: right;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
+
 
 /* ================= RESET ================= */
 * {
@@ -229,6 +230,44 @@ body {
 }
 
 
+/* ================= RESPONSIVE SOLO CELULAR ================= */
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .panel {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .panel-superior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE SOLO CELULAR ================= */
+
 @media (max-width: 768px) {
 
     body {
@@ -237,23 +276,10 @@ body {
         height: auto;
     }
 
-    .contenedor-principal {
-        height: auto;
-        padding: 20px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
     .pantalla-bienvenida {
         flex-direction: column;
         text-align: center;
         gap: 40px;
-        width: 100%;
-        align-items: center;
-    }
-
-    .lado-izquierdo {
-        text-align: center;
     }
 
     .lado-izquierdo h1 {
@@ -266,10 +292,13 @@ body {
 
     .cuadro-botones {
         width: 100%;
-        max-width: 350px;
         height: auto;
         padding: 30px;
-        margin: 0 auto;
+    }
+
+    .contenedor-principal {
+        height: auto;
+        padding: 20px;
     }
 
     .cuadro-formulario {
@@ -298,16 +327,33 @@ body {
         gap: 10px;
         font-size: 20px;
     }
+}
 
-    .logo {
-        position: static;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+.contenedor-principal {
+    width: 100%;
+    margin: 0 auto;
+}
 
-    .titulo {
-        text-align: center;
-    }
+.pantalla-bienvenida {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.lado-izquierdo {
+    text-align: center;
+}
+
+.cuadro-botones {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
