@@ -1,29 +1,43 @@
+/* ================= FUENTES ================= */
+
+@font-face {
+    font-family: 'Etna';
+    src: url('./fonts/Etna.ttf') format('truetype');
+}
+
+/* ================= RESET ================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
+
 body {
     background-color: #66c7c9;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
+    align-items: flex-start;
+    padding: 40px 0;
+    font-family: 'Contrail One', sans-serif;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* ================= CONTENEDOR PRINCIPAL ================= */
 
 .contenedor-principal {
     width: 95%;
+    max-width: 1200px;
     height: 90vh;
     background-color: #d9d9d9;
     border: 3px solid black;
-    position: relative;
+    margin: 0 auto;
+    position: relative; /* necesario para el botón inferior */
 }
 
-/* PANTALLA BIENVENIDA */
+/* ================= PANTALLA BIENVENIDA ================= */
 
 .pantalla-bienvenida {
     width: 90%;
@@ -33,10 +47,19 @@ body {
     align-items: center;
 }
 
+/* Centrado perfecto del bloque izquierdo */
+.lado-izquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .lado-izquierdo h1 {
     font-size: 100px;
     font-weight: 800;
     margin-bottom: 40px;
+    font-family: 'Etna', sans-serif;
 }
 
 .lado-izquierdo p {
@@ -44,7 +67,7 @@ body {
     line-height: 1.6;
 }
 
-/* CUADRO BOTONES */
+/* ================= CUADRO BOTONES ================= */
 
 .cuadro-botones {
     width: 320px;
@@ -64,13 +87,14 @@ button {
     background-color: white;
     border: 2px solid black;
     font-weight: 600;
+    font-family: 'Etna', sans-serif;
 }
 
 button:hover {
     background-color: #f0f0f0;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .logo {
     position: absolute;
@@ -78,9 +102,10 @@ button:hover {
     left: 30px;
     font-size: 30px;
     font-weight: 700;
+    font-family: 'Etna', sans-serif;
 }
 
-/* CONTENIDO CENTRO */
+/* ================= CONTENIDO CENTRO ================= */
 
 .contenido-centro {
     height: 100%;
@@ -88,15 +113,17 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .titulo {
     font-size: 60px;
     margin-bottom: 40px;
     font-weight: 700;
+    font-family: 'Etna', sans-serif;
 }
 
-/* FORMULARIO */
+/* ================= FORMULARIO ================= */
 
 .cuadro-formulario {
     width: 520px;
@@ -117,7 +144,6 @@ button:hover {
 .grupo label {
     font-size: 22px;
     font-weight: 600;
-    width: 180px;
 }
 
 .grupo input {
@@ -155,6 +181,7 @@ button:hover {
     border: 3px solid black;
     cursor: pointer;
     font-weight: 600;
+    font-family: 'Etna', sans-serif;
 }
 
 .btn-crear:hover,
@@ -162,55 +189,39 @@ button:hover {
     background-color: #bfbfbf;
 }
 
+/* 🔥 BOTÓN INFERIOR DERECHA */
+
 .login-link {
-    display: block;
-    margin-top: 15px;
-    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
     font-size: 18px;
     text-decoration: none;
     color: black;
     font-weight: 600;
-}
-
-
-
-/* ================= RESET ================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ================= BODY ================= */
-body {
-    background-color: #66c7c9;       /* fondo celeste */
-    min-height: 100vh;                /* permite crecer si el contenido es mayor que la pantalla */
-    display: flex;
-    justify-content: center;          /* centra horizontalmente */
-    align-items: flex-start;          /* evita que se corte el borde superior */
-    padding-top: 40px;                /* margen celeste arriba */
-    padding-bottom: 40px;             /* margen celeste abajo */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Etna', sans-serif;
 }
 
 /* ================= PANEL ================= */
+
 .panel {
     width: 90%;
-    max-width: 1000px;
-    min-height: auto;
+    max-width: 900px;
+    min-height: 1200px;
     background-color: #dcdcdc;
     border: 6px solid black;
     padding: 60px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 40px auto;
+    position: relative; /* necesario para botón inferior */
 }
-
 
 .panel-superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 28px;
+    font-family: 'Etna', sans-serif;
 }
 
 .cerrar-btn {
@@ -219,57 +230,14 @@ body {
     font-size: 22px;
     cursor: pointer;
     font-weight: 600;
+    font-family: 'Etna', sans-serif;
 }
 
 .cerrar-btn:hover {
     text-decoration: underline;
 }
 
-.titulo {
-    text-align: center;
-}
-.contenido-centro {
-    text-align: center;
-}
-
-
-/* ================= RESPONSIVE SOLO CELULAR ================= */
-@media (max-width: 768px) {
-    body {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .panel {
-        width: 100%;
-        min-height: auto;
-        padding: 25px;
-    }
-
-    .panel-superior {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        font-size: 20px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================= RESPONSIVE SOLO CELULAR ================= */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
 
@@ -332,26 +300,7 @@ body {
     }
 }
 
-.contenedor-principal {
-    width: 100%;
-    margin: 0 auto;
-}
 
-.pantalla-bienvenida {
-    width: 100%;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.lado-izquierdo {
-    text-align: center;
-}
-
-.cuadro-botones {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-}
 
 
 
