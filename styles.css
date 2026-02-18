@@ -320,6 +320,26 @@ body {
     }
 }
 
+.contenedor-principal {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pantalla-bienvenida {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.lado-izquierdo {
+    text-align: center;
+}
+
+.cuadro-botones {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
 
 
 
