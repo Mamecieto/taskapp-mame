@@ -302,7 +302,20 @@ button:hover {
         font-size: 20px;
     }
 }
+/* 🔥 LOGO en celular */
+.logo {
+    position: static;     /* deja de ser absoluto */
+    text-align: right;    /* se va a la derecha */
+    margin-bottom: 10px;
+}
 
+/* 🔥 REGISTRARSE en celular */
+.login-link {
+    position: static;     /* deja de ser absoluto */
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
 
 
 
