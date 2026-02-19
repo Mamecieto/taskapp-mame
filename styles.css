@@ -241,32 +241,17 @@ button:hover {
 @media (max-width: 768px) {
 
     body {
-        align-items: center;
+        align-items: center;   /* centrado horizontal */
         padding: 20px;
         height: auto;
     }
 
-    .contenedor-principal {
-        width: 95%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    /* 🔥 ACA ESTA EL ARREGLO REAL */
-
     .pantalla-bienvenida {
-        width: 100%;              /* ocupa todo */
-        display: flex;
-        flex-direction: column;   /* vertical */
-        justify-content: center;
-        align-items: center;      /* centra horizontal */
+        flex-direction: column;
         text-align: center;
         gap: 40px;
-    }
-
-    .lado-izquierdo {
+        justify-content: center;
         align-items: center;
-        text-align: center;
     }
 
     .lado-izquierdo h1 {
@@ -279,9 +264,15 @@ button:hover {
 
     .cuadro-botones {
         width: 100%;
-        max-width: 350px;
         height: auto;
-        margin: 0 auto;   /* centra el cuadro */
+        padding: 30px;
+    }
+
+    .contenedor-principal {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;   /* 🔥 esto lo centra */
     }
 
     .cuadro-formulario {
@@ -292,6 +283,10 @@ button:hover {
     .grupo {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .grupo label {
+        width: auto;
     }
 
     .panel {
