@@ -236,6 +236,8 @@ button:hover {
 
 /* ================= RESPONSIVE ================= */
 
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
 
     body {
@@ -243,15 +245,26 @@ button:hover {
     }
 
     .contenedor-principal {
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
         padding: 30px 20px;
     }
 
+    /* 🔥 PANTALLA BIENVENIDA CENTRADA */
+
     .pantalla-bienvenida {
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
         align-items: center;
+        text-align: center;
         gap: 40px;
+    }
+
+    .lado-izquierdo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .lado-izquierdo h1 {
@@ -264,13 +277,18 @@ button:hover {
 
     .cuadro-botones {
         width: 100%;
+        max-width: 400px;
         height: auto;
         padding: 25px;
+        margin: 0 auto; /* 🔥 centra el cuadro */
     }
+
+    /* 🔥 FORMULARIOS */
 
     .cuadro-formulario {
         width: 100%;
         padding: 25px;
+        margin: 0 auto;
     }
 
     .grupo {
@@ -278,15 +296,21 @@ button:hover {
         align-items: flex-start;
     }
 
+    /* 🔥 PANEL */
+
     .panel {
         width: 100%;
         padding: 20px;
     }
 
+    .panel-superior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 20px;
+    }
+
 }
-
-
-
 
 
 
