@@ -241,34 +241,36 @@ button:hover {
 @media (max-width: 768px) {
 
     body {
+        align-items: center;
         padding: 20px;
+        height: auto;
     }
 
     .contenedor-principal {
         width: 95%;
+        height: auto;
         margin: 0 auto;
-        padding: 30px 20px;
     }
 
-    /* 🔥 PANTALLA BIENVENIDA CENTRADA */
+    /* 🔥 ACA ESTA EL ARREGLO REAL */
 
     .pantalla-bienvenida {
+        width: 100%;              /* ocupa todo */
         display: flex;
-        flex-direction: column;
+        flex-direction: column;   /* vertical */
         justify-content: center;
-        align-items: center;
+        align-items: center;      /* centra horizontal */
         text-align: center;
         gap: 40px;
     }
 
     .lado-izquierdo {
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .lado-izquierdo h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .lado-izquierdo p {
@@ -277,18 +279,14 @@ button:hover {
 
     .cuadro-botones {
         width: 100%;
-        max-width: 400px;
+        max-width: 350px;
         height: auto;
-        padding: 25px;
-        margin: 0 auto; /* 🔥 centra el cuadro */
+        margin: 0 auto;   /* centra el cuadro */
     }
-
-    /* 🔥 FORMULARIOS */
 
     .cuadro-formulario {
         width: 100%;
         padding: 25px;
-        margin: 0 auto;
     }
 
     .grupo {
@@ -296,11 +294,10 @@ button:hover {
         align-items: flex-start;
     }
 
-    /* 🔥 PANEL */
-
     .panel {
         width: 100%;
-        padding: 20px;
+        min-height: auto;
+        padding: 25px;
     }
 
     .panel-superior {
@@ -309,8 +306,13 @@ button:hover {
         gap: 10px;
         font-size: 20px;
     }
-
 }
+
+
+
+
+
+
 
 
 
