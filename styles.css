@@ -190,13 +190,13 @@ button:hover {
 }
 
 .login-link {
-    display: block;
-    margin-top: 15px;
-    text-align: right;
+    position: absolute;
+    bottom: 30px;   /* separación desde abajo */
+    right: 40px;    /* separación desde la derecha */
     font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     color: black;
-    font-weight: 600;
 }
 
 /* PANEL */
@@ -233,12 +233,15 @@ button:hover {
     text-decoration: underline;
 }
 
+
+/* ================= RESPONSIVE ================= */
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
 
     body {
-        align-items: flex-start;
+        align-items: center;   /* centrado horizontal */
         padding: 20px;
         height: auto;
     }
@@ -247,6 +250,8 @@ button:hover {
         flex-direction: column;
         text-align: center;
         gap: 40px;
+        justify-content: center;
+        align-items: center;
     }
 
     .lado-izquierdo h1 {
@@ -264,8 +269,10 @@ button:hover {
     }
 
     .contenedor-principal {
+        width: 95%;
         height: auto;
         padding: 20px;
+        margin: 0 auto;   /* 🔥 esto lo centra */
     }
 
     .cuadro-formulario {
