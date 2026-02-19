@@ -236,26 +236,26 @@ button:hover {
 
 /* ================= RESPONSIVE ================= */
 
-/* ================= RESPONSIVE ================= */
-
 @media (max-width: 768px) {
 
     body {
-        align-items: center;   /* centrado horizontal */
         padding: 20px;
-        height: auto;
+    }
+
+    .contenedor-principal {
+        width: 100%;
+        padding: 30px 20px;
     }
 
     .pantalla-bienvenida {
         flex-direction: column;
         text-align: center;
-        gap: 40px;
-        justify-content: center;
         align-items: center;
+        gap: 40px;
     }
 
     .lado-izquierdo h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .lado-izquierdo p {
@@ -265,14 +265,7 @@ button:hover {
     .cuadro-botones {
         width: 100%;
         height: auto;
-        padding: 30px;
-    }
-
-    .contenedor-principal {
-        width: 95%;
-        height: auto;
-        padding: 20px;
-        margin: 0 auto;   /* 🔥 esto lo centra */
+        padding: 25px;
     }
 
     .cuadro-formulario {
@@ -285,26 +278,12 @@ button:hover {
         align-items: flex-start;
     }
 
-    .grupo label {
-        width: auto;
-    }
-
     .panel {
         width: 100%;
-        min-height: auto;
-        padding: 25px;
+        padding: 20px;
     }
 
-    .panel-superior {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        font-size: 20px;
-    }
 }
-
-
-
 
 
 
